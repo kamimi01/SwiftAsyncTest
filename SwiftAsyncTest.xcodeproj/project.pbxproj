@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4452A1626D9FB73001058C3 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4452A1526D9FB73001058C3 /* ContentModel.swift */; };
 		D4A9361726D5F6BC00B928EC /* SwiftAsyncTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9361626D5F6BC00B928EC /* SwiftAsyncTestApp.swift */; };
 		D4A9361926D5F6BC00B928EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9361826D5F6BC00B928EC /* ContentView.swift */; };
 		D4A9361B26D5F6BF00B928EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A9361A26D5F6BF00B928EC /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4452A1526D9FB73001058C3 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		D4A9361326D5F6BC00B928EC /* SwiftAsyncTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAsyncTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A9361626D5F6BC00B928EC /* SwiftAsyncTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAsyncTestApp.swift; sourceTree = "<group>"; };
 		D4A9361826D5F6BC00B928EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				D4A9361A26D5F6BF00B928EC /* Assets.xcassets */,
 				D4A9361F26D5F6BF00B928EC /* Info.plist */,
 				D4A9361C26D5F6BF00B928EC /* Preview Content */,
+				D4452A1526D9FB73001058C3 /* ContentModel.swift */,
 			);
 			path = SwiftAsyncTest;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				D4A9361726D5F6BC00B928EC /* SwiftAsyncTestApp.swift in Sources */,
 				D4A9362726D5F6F300B928EC /* ContentViewModel.swift in Sources */,
 				D4A9364926D5FA0400B928EC /* ArticleClient.swift in Sources */,
+				D4452A1626D9FB73001058C3 /* ContentModel.swift in Sources */,
 				D4A9365526D5FDCF00B928EC /* SecretConstants.swift in Sources */,
 				D4A9364E26D5FA0400B928EC /* ArticleClientError.swift in Sources */,
 				D4A9364826D5FA0400B928EC /* HttpMethod.swift in Sources */,

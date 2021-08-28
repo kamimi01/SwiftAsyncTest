@@ -12,22 +12,20 @@ class ContentViewModel: ObservableObject {
     // 記事情報を格納していく
     @Published var articleLists: [[String: Any]] = []
     
-    var contentRepository: ContentRepository
-    
-    init(contentRepository: ContentRepository = ContentRepository.shared) {
-        self.contentRepository = contentRepository
-        
+    init() {
         getAllArticles()
     }
     
+    let model = ContentModel()
+    
     private func getAllArticles() {
-        contentRepository.getAllArticles { [weak self] result in
+        
+        model.getAllRecommendations { [weak self] result in
             
-            // UIのスレッドで更新する（それ以外の処理は非同期で行えるようになった）
             DispatchQueue.main.async {
                 self?.articleLists = result
             }
-
         }
+
     }
 }
