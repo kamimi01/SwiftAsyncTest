@@ -14,9 +14,10 @@ struct ContentView: View {
     var body: some View {
         
         if viewModel.articleLists.isEmpty {
-            Text("何も取得してない")
+            // APIとの通信が完了するまでは、
+            Text("描画中")
         } else {
-            Text("テスト")
+            Text(viewModel.articleLists.first?["title"] as? String ?? "")
         }
     }
 }

@@ -21,6 +21,13 @@ class ContentViewModel: ObservableObject {
     }
     
     private func getAllArticles() {
-        articleLists = contentRepository.getAllArticles()
+        contentRepository.getAllArticles { [weak self] result in
+            
+            // UIのスレッドで更新する（それ以外の処理は非同期で行えるようになった）
+            DispatchQueue.main.async {
+                self?.articleLists = result
+            }
+
+        }
     }
 }
